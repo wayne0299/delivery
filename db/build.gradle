@@ -10,7 +10,6 @@ repositories {
 }
 
 dependencies {
-    implementation project(':db')       // 한 부모 아래의 프로젝트중 db를 가져다 쓸거임
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
