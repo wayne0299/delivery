@@ -1,9 +1,19 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.7.9'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
 
 allprojects {       // 부모 하위에 있는 모든 프로젝트는 메이븐을 사용하겟다.
     repositories {
         mavenCentral()
     }
+}
+
+bootJar {   // Spring Boot 플러그인의 실행 가능한 JAR 파일 생성을 비활성화 함.
+    enabled = false
+}
+
+jar {       // jar 기본 패키징도 안함.
+    enabled = false
 }
